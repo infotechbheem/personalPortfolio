@@ -12,6 +12,7 @@
             "dest": "/api/index.php"
         }
     ],
+    "outputDirectory": "build",
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
