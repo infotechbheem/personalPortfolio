@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\welcomemail;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Exception;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 
 class ContactController extends Controller
 {
@@ -35,9 +37,18 @@ class ContactController extends Controller
 
                 $insert = DB::table('users')->insert($data);
                 if ($insert) {
+                    $email = "infotechbheem@gmail.com";
+                    $name = $request->name;
+                    $toEmail = $request->email;
+                    $message = $request->message;
+                    $subject = $request->subject;
+
+                    $result = Mail::to($email)->send( new welcomemail($message, $subject, $toEmail, $name));
+
                     return response()->json([
                         'success' => true,
-                        'message' => 'Your message has been sent. Thank you!'
+                        'message' => 'Your message has been sent. Thank you!',
+                        'details' => $result
                     ]);
                 } else {
                     return response()->json([

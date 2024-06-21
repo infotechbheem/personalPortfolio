@@ -33,7 +33,7 @@
                         <img src="assets/img/profile-image/profile-image.jpg" class="img-fluid img" alt="Image">
                     </div>
                     <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-                        <h3>Full Stack Developer</h3>
+                        <h3 class="text-white">Full Stack Developer</h3>
                         <p class="fst-italic">
                             "With expertise in HTML, CSS, JavaScript for front-end, and PHP, Laravel, and MySQL for
                             back-end, I deliver seamless and dynamic web applications. Specializing in comprehensive
@@ -158,6 +158,11 @@
                     </div>
 
                 </div>
+                <div class="row">
+                    <div class="pb-4">
+                        <h5><em>For Resume: <a href="">Click Here</a></em></h5>
+                    </div>
+                </div>
 
             </div>
         </section><!-- End Skills Section -->
@@ -264,9 +269,9 @@
 
                 <div class="section-title">
                     <h2 class="text-white pt-4">Contact</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                        fugiat sit in iste officiis commodi quidem hic quas.</p>
+                    <p>
+                        Have a question or want to work together? Reach out to me using any of the methods below.
+                    </p>
                 </div>
 
                 <div class="row" data-aos="fade-in">
@@ -288,7 +293,7 @@
                             <div class="phone">
                                 <i class="bi bi-phone"></i>
                                 <h4 class="text-white">Call:</h4>
-                                <p class="text-primary">+91 6202204747</p>
+                                <p class="text-primary">+91 9162931271</p>
                             </div>
 
                             <iframe
